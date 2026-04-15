@@ -1,15 +1,15 @@
 # TCS iON AIP 135 — Neural Network: Customer Buying Trends Prediction
 
 ## Project Overview
-This project predicts whether a customer will buy a product based on demographic and behavioral signals. It solves the problem of identifying likely buyers early so marketing and personalization workflows can prioritize high-intent users. The deployed model pipeline uses a Perceptron architecture with feature scaling and API-ready preprocessing for categorical and numeric inputs. The achieved project accuracy is 99.51%.
+This project predicts whether a customer will buy a product based on demographic and behavioral signals. It solves the problem of identifying likely buyers early so marketing and personalization workflows can prioritize high-intent users. The deployed model pipeline uses a Perceptron architecture with feature scaling and API-ready preprocessing for categorical and numeric inputs. The current measured test accuracy is 68.62%.
 
 ## Accuracy Results
 | Metric     | Value  |
 |------------|--------|
-| Accuracy   | 99.51% |
-| Precision  | 99.48% |
-| Recall     | 99.53% |
-| F1-Score   | 99.50% |
+| Accuracy   | 68.62% |
+| Precision  | 74.00% |
+| Recall     | 69.00% |
+| F1-Score   | 69.00% |
 
 ## Project Structure
 ```text
@@ -55,7 +55,7 @@ curl http://localhost:5000/health
 ```
 Example response:
 ```json
-{"status":"ok","model":"Perceptron","accuracy":99.51}
+{"status":"ok","model":"Perceptron","accuracy":68.62}
 ```
 
 ### Prediction
@@ -91,8 +91,8 @@ Example response:
 ```json
 {
   "model_type": "Perceptron",
-  "accuracy_on_test": 99.51,
-  "f1_score": 99.50,
+  "accuracy_on_test": 68.62,
+  "f1_score": 69.00,
   "model_version": "1.0.0"
 }
 ```

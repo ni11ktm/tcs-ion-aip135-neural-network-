@@ -39,11 +39,14 @@ def main() -> None:
     MODELS_DIR.mkdir(parents=True, exist_ok=True)
     joblib.dump(final_pipeline, MODEL_FILE)
 
+    accuracy_percent = round(float(accuracy_score(y_test, y_pred) * 100), 2)
+    f1_percent = round(float(f1_score(y_test, y_pred, average="weighted") * 100), 2)
+
     metadata = {
         "model_type": "Perceptron",
         "sklearn_version": sklearn.__version__,
-        "accuracy_on_test": 99.51,
-        "f1_score": 99.50,
+        "accuracy_on_test": accuracy_percent,
+        "f1_score": f1_percent,
         "training_date": str(date.today()),
         "feature_names": FEATURE_NAMES,
         "target_classes": [0, 1],

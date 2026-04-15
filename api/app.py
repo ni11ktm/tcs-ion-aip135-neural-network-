@@ -56,7 +56,13 @@ def _validate_types(payload: dict) -> None:
 
 @app.get("/health")
 def health():
-    return jsonify({"status": "ok", "model": "Perceptron", "accuracy": 99.51})
+    return jsonify(
+        {
+            "status": "ok",
+            "model": MODEL_METADATA.get("model_type", "Perceptron"),
+            "accuracy": MODEL_METADATA.get("accuracy_on_test"),
+        }
+    )
 
 
 @app.get("/model-info")

@@ -1,8 +1,8 @@
 {
   "model_type": "Perceptron",
   "sklearn_version": "1.8.0",
-  "accuracy_on_test": 99.51,
-  "f1_score": 99.5,
+  "accuracy_on_test": 68.62,
+  "f1_score": 69.0,
   "training_date": "2026-04-15",
   "feature_names": [
     "age",
