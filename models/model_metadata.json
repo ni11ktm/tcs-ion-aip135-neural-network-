@@ -1,0 +1,29 @@
+{
+  "model_type": "Perceptron",
+  "sklearn_version": "1.8.0",
+  "accuracy_on_test": 99.51,
+  "f1_score": 99.5,
+  "training_date": "2026-04-15",
+  "feature_names": [
+    "age",
+    "gender_encoded",
+    "annual_income",
+    "purchase_history",
+    "loyalty_score",
+    "time_on_site",
+    "product_cat_electronics",
+    "product_cat_personal_care",
+    "product_cat_clothing",
+    "product_cat_home",
+    "product_cat_food"
+  ],
+  "target_classes": [
+    0,
+    1
+  ],
+  "class_labels": {
+    "0": "Will Not Buy",
+    "1": "Will Buy"
+  },
+  "model_version": "1.0.0"
+}

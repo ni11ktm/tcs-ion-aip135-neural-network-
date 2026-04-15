@@ -1,0 +1,13 @@
+age,gender,annual_income,purchase_history,product_category,loyalty_score,time_on_site,will_buy
+25,Female,42000,3,Clothing,4.2,7.1,0
+31,Male,78000,12,Electronics,8.4,22.5,1
+29,Female,56000,6,Personal Care,6.1,14.2,1
+44,Male,39000,2,Food,3.8,5.0,0
+37,Female,92000,18,Home,9.1,27.4,1
+22,Male,28000,1,Food,2.9,3.2,0
+48,Female,65000,9,Electronics,7.7,19.1,1
+33,Male,51000,5,Clothing,5.6,11.8,0
+41,Female,83000,14,Home,8.8,24.6,1
+27,Male,47000,4,Personal Care,5.1,9.7,0
+36,Female,73000,11,Electronics,7.9,20.3,1
+30,Female,54000,7,Food,6.0,13.9,1
